@@ -2,9 +2,9 @@
 /**
   * wechat php test
   */
-echo "daole";
+
 //define your token
-define("TOKEN", "bunao");
+define("TOKEN", "weixin");
 $wechatObj = new wechatCallbackapiTest();
 $wechatObj->valid();
 
@@ -17,10 +17,7 @@ class wechatCallbackapiTest
         //valid signature , option
         if($this->checkSignature()){
         	echo $echoStr;
-            echo "没通过";
         	exit;
-        }else{
-            echo "没通过";
         }
     }
 
