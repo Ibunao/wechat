@@ -2,7 +2,7 @@
 /**
   * wechat php test
   */
-
+echo "daole";
 //define your token
 define("TOKEN", "bunao");
 $wechatObj = new wechatCallbackapiTest();
