@@ -17,6 +17,7 @@ class wechatCallbackapiTest
         //valid signature , option
         if($this->checkSignature()){
         	echo $echoStr;
+            echo "没通过";
         	exit;
         }else{
             echo "没通过";
